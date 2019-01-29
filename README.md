@@ -11,9 +11,11 @@ allprojects {
 
 }
 
-dependencies {
-      implementation 'com.github.huangxiaoguo1:HxgVoiceBroadcast:1.0.0'
-}
+    dependencies {
+
+          implementation 'com.github.huangxiaoguo1:HxgVoiceBroadcast:1.0.0'
+
+    }
 
 ## 使用介绍
 
