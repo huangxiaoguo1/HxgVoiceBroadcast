@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.lib_hxgvoicebroadcast.VoicePlay;
+import com.example.lib_hxgvoicebroadcast.VoicePlaySingle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,15 +28,13 @@ public class MainActivity extends AppCompatActivity {
 
         result.add(Constants.START_SOUND);
         result.add(Constants.END_SOUND);
-        result.add(Constants.START_SOUND);
-
 
         // 默认播放
         findViewById(R.id.btn1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 trim = etText.getText().toString().trim();
-                if (TextUtils.isEmpty(trim)){
+                if (TextUtils.isEmpty(trim)) {
                     trim = "收到付款1999.99元";
                 }
                 VoicePlay.with(MainActivity.this).play(trim);
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 trim = etText.getText().toString().trim();
-                if (TextUtils.isEmpty(trim)){
+                if (TextUtils.isEmpty(trim)) {
                     trim = "收到付款1999.99元";
                 }
                 VoicePlay.with(MainActivity.this).play(trim, true);
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 trim = etText.getText().toString().trim();
-                if (TextUtils.isEmpty(trim)){
+                if (TextUtils.isEmpty(trim)) {
                     trim = "收到付款1999.99元";
                 }
                 VoicePlay.with(MainActivity.this).play(trim, false, Constants.START_SOUND);
@@ -68,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 trim = etText.getText().toString().trim();
-                if (TextUtils.isEmpty(trim)){
+                if (TextUtils.isEmpty(trim)) {
                     trim = "收到付款1999.99元";
                 }
                 VoicePlay.with(MainActivity.this).play(trim, false, Constants.START_SOUND, Constants.END_SOUND);
@@ -79,10 +78,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 trim = etText.getText().toString().trim();
-                if (TextUtils.isEmpty(trim)){
+                if (TextUtils.isEmpty(trim)) {
                     trim = "收到付款1999.99元";
                 }
-                VoicePlay.with(MainActivity.this).play(result);
+                VoicePlaySingle.with(MainActivity.this).closeVoice();
+                VoicePlaySingle.with(MainActivity.this).play(result);
+//                VoicePlay.with(MainActivity.this).play(result);
             }
         });
     }

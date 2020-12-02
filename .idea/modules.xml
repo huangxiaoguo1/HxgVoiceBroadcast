@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HxgVoiceBroadcast.iml" filepath="$PROJECT_DIR$/HxgVoiceBroadcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HxgVoiceBroadcast-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HxgVoiceBroadcast-app.iml" group="HxgVoiceBroadcast/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-HxgVoiceBroadcast.iml" filepath="$PROJECT_DIR$/.idea/modules/android-HxgVoiceBroadcast.iml" group="HxgVoiceBroadcast" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_hxgvoicebroadcast/com.github.huangxiaoguo1-lib_hxgvoicebroadcast.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_hxgvoicebroadcast/com.github.huangxiaoguo1-lib_hxgvoicebroadcast.iml" group="HxgVoiceBroadcast/lib_hxgvoicebroadcast" />
       <module fileurl="file://$PROJECT_DIR$/lib_hxgvoicebroadcast/lib_hxgvoicebroadcast.iml" filepath="$PROJECT_DIR$/lib_hxgvoicebroadcast/lib_hxgvoicebroadcast.iml" />
     </modules>
   </component>
